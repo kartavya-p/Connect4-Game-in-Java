@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane fx:id="rootGridPane" style="-fx-background-color: #D9F7F0;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.internshala.connect4.Controller">
+    <columnConstraints>
+        <ColumnConstraints />
+        <ColumnConstraints maxWidth="253.2" minWidth="188.20001525878905" prefWidth="196.8" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints minHeight="10.0" prefHeight="30.0" />
+        <RowConstraints />
+    </rowConstraints>
+    <children>
+        <Pane GridPane.columnSpan="2" />
+      <Pane fx:id="insertedDiscPane" prefHeight="400.0" prefWidth="200.0" GridPane.rowIndex="1" />
+      <VBox style="-fx-background-color: #2B3B4C;" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <children>
+            <Pane prefHeight="203.0" prefWidth="197.0">
+               <children>
+                  <TextField fx:id="playerOneField" layoutX="24.0" layoutY="25.0" prefHeight="25.0" prefWidth="153.0" promptText="Player One Name" />
+                  <TextField fx:id="playerTwoField" layoutX="24.0" layoutY="60.0" prefHeight="25.0" prefWidth="153.0" promptText="Player Two Name" />
+                  <Button fx:id="setNamesButton" layoutX="23.0" layoutY="102.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="153.0" text="Set Names" />
+               </children>
+            </Pane>
+            <Label fx:id="playerNameLabel" alignment="CENTER" prefHeight="54.0" prefWidth="259.0" text="Player One" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" prefHeight="14.0" prefWidth="250.0" text="Turn" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Region prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS" />
+         </children>
+      </VBox>
+    </children>
+</GridPane>
